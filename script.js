@@ -8,7 +8,7 @@ function renderTabel() {
 
     daftarSiswa.forEach((nama, index) => {
         let tr = document.createElement("tr");
-        let idAman = nama.replace(/\s+/g, ''); // Hilangkan spasi untuk ID memori (Contoh: BudiSantoso)
+        let idAman = nama.replace(/\s+/g, ''); // Hilangkan spasi untuk ID memori (Contoh: yanto)
         
         tr.innerHTML = `
             <td>${nama}</td>

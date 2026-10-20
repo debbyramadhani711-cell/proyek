@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KasKelas - Dasbor Bendahara</title>
+    <title>KasKelas V2 - Dasbor Bendahara</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>💰 KasKelas 11 RPL 1</h1>
-        <p>Centang jika siswa sudah membayar kas mingguan. Data otomatis tersimpan di komputermu!</p>
+        <p>Kelola nama siswa dan centang kas mingguan. Semua data tersimpan di memori browsermu!</p>
         
+        <!-- Fitur Tambah Siswa Baru -->
+        <div class="add-student">
+            <input type="text" id="namaBaru" placeholder="Ketik nama siswa baru...">
+            <button id="btnTambah">Tambah Siswa</button>
+        </div>
+
         <table id="kasTable">
             <thead>
                 <tr>
@@ -19,14 +25,15 @@
                     <th>Minggu 2</th>
                     <th>Minggu 3</th>
                     <th>Minggu 4</th>
+                    <th>Aksi</th> <!-- Kolom baru untuk tombol hapus -->
                 </tr>
             </thead>
             <tbody>
-                <!-- Daftar nama siswa akan dimasukkan secara otomatis oleh JavaScript -->
+                <!-- Daftar nama siswa akan dimasukkan otomatis -->
             </tbody>
         </table>
 
-        <button id="resetBtn">Reset Data Bulan Ini</button>
+        <button id="resetBtn" class="btn-danger">Reset Semua Centang Bulan Ini</button>
     </div>
 
     <script src="script.js"></script>
